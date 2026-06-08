@@ -1,0 +1,21 @@
+                    User
+                      |
+                www.foobar.com
+                      |
+                  A Record
+                      |
+                   8.8.8.8
+                      |
+                HAProxy (LB)
+                 /         \
+                /           \
+         Server 2        Server 3
+         --------        --------
+         Nginx           Nginx
+            |               |
+      Application     Application
+         Server          Server
+            |               |
+      App Files       App Files
+            |               |
+      MySQL Primary <---- Replication ---- MySQL Replica
