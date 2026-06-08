@@ -1,0 +1,25 @@
+                           User
+                             |
+                       www.foobar.com
+                             |
+                    -----------------
+                    |               |
+               HAProxy 1       HAProxy 2
+                 Active          Passive
+                    |               |
+                    -----------------
+                             |
+                  ---------------------
+                  |                   |
+             Web Server 1       Web Server 2
+                Nginx              Nginx
+                  |                   |
+                  ---------------------
+                             |
+                    Application Server
+                             |
+                      MySQL Primary
+                             |
+                       Replication
+                             |
+                      MySQL Replica
